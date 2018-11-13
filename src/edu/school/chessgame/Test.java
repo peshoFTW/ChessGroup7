@@ -7,9 +7,11 @@ public class Test {
 	public static void main(String[] args) {
 		ChessPiece[] c = new ChessPiece[32];
 		c[0] = new Bishop(7,0,Color.BLACK);
+		c[1] = new King(3,1,Color.WHITE);
 		printTable(c);
 		System.out.println("=========================================");
 		c[0].moveTo(5, 2, c);
+		c[1].moveTo(3,2, c);
 		printTable(c);
 	}
 	
